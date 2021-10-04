@@ -25,7 +25,7 @@
   </head>
   <body>
     <!--HEADER-->
-    <!--  <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a href="./" class="logo header__logo animate__pulse">
@@ -61,8 +61,72 @@
             >
           </li>
         </ul>
+        <button class="burger-btn" data-menu-open>
+          <svg class="burger-btn__icon">
+            <use href="./images/sprite.svg#burger-icon"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg
+              class="mobile-menu__icon"
+              width="19"
+              height="19"
+              aria-label="кнопка закрытия мобильного меню"
+            >
+              <use href="./images/sprite.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+          <div class="b-m-p-1">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-list__item">
+                <a href="./index.html" class="mobile-menu-list__link current"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-menu-list__item">
+                <a href="./portfolio.html" class="mobile-menu-list__link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-menu-list__item">
+                <a href="#" class="mobile-menu-list__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="b-m-p-2">
+            <ul>
+              <li class="mobile-menu__phone--alignment">
+                <a href="tel:+380961111111" class="mobile-menu__phone"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-menu__email--alignment">
+                <a href="mailto:info@devstudio.com" class="mobile-menu__email"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="sm-list">
+              <li class="sm-list__icon">
+                <a href="" class="sm-list__link">Instagram</a>
+              </li>
+              <li class="sm-list__icon">
+                <a href="" class="sm-list__link">Twitter</a>
+              </li>
+              <li class="sm-list__icon">
+                <a href="" class="sm-list__link">Facebook</a>
+              </li>
+              <li class="sm-list__icon">
+                <a href="" class="sm-list__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <!--MAIN-->
     <main>
       <section class="hero">
