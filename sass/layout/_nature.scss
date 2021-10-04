@@ -1,0 +1,121 @@
+.section__features-main {
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    & {
+      padding-top: 94px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.nature {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199px) {
+  .nature {
+    grid-gap: 30px;
+  }
+}
+
+.icon__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--background-color-2);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features__item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section__nature:not(:last-child) {
+  margin-bottom: 30px;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+// 768+ //
+
+@media screen and (min-width: 768px) {
+  .nature {
+    display: grid;
+    grid-template-columns: repeat(2, 354px);
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      grid-gap: 30px;
+    }
+  }
+
+  .section__nature {
+    width: 354px;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    text-align: left;
+  }
+}
+
+// 1200+ //
+
+@media screen and (min-width: 1200px) {
+  .nature {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__nature {
+    flex-basis: calc((100% - 30px) / 4);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+/* .section__features {
+  padding-bottom: 94px;
+}
+
+
+.section__nature {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+
+
+.features__text {
+  font-family: "Roboto", sans-serif;
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+ */

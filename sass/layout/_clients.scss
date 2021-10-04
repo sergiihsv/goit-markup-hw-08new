@@ -1,0 +1,38 @@
+.regular-clients-title {
+  font-size: 36px;
+  color: var(--primary-text-color);
+  text-align: center;
+  margin: 0%;
+  margin-bottom: 50px;
+}
+.regular-clients-list {
+  display: flex;
+  flex-basis: calc(100% / 6 - 30px);
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
+
+.clients-list {
+  margin-right: 30px;
+}
+
+.clients-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: var(--clients-color);
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}

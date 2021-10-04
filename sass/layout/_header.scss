@@ -1,0 +1,141 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--header-logo-color);
+  margin-right: 93px;
+  animation-duration: 500ms;
+  animation-iteration-count: 2;
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contact-list {
+  display: flex;
+}
+
+.contact__tel {
+  margin-left: 50px;
+}
+
+.contact__email-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact__tel-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-web {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.order {
+  background-color: var(--background-color);
+}
+
+.menu__link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.current {
+    position: relative;
+  }
+
+  &.current::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    display: block;
+    bottom: -32px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.menu .menu__link.current {
+  color: var(--accent-color);
+}
+
+.email {
+  font-family: "Roboto", sans-serif;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.tel {
+  font-family: "Roboto", sans-serif;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

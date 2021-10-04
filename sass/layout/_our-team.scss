@@ -1,0 +1,74 @@
+.section-team {
+  background-color: var(--background-color-2);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0px auto;
+}
+
+.team-members {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.team-post {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.members {
+  display: flex;
+  margin-left: -30px;
+  flex-wrap: wrap;
+
+  &-item {
+    /* flex-basis: calc(100% - 120px) / 4; */
+    margin-left: 30px;
+    background: var(--secondary-text-color);
+    box-shadow: 0px 1px 3px rgba(51, 42, 42, 0.12),
+      0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+
+.team-list {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--secondary-text-color);
+    fill: var(--clients-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: var(--secondary-text-color);
+      background-color: var(--accent-color);
+    }
+  }
+}
