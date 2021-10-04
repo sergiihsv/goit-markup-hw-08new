@@ -1,34 +1,62 @@
-.regular-clients-title {
-  font-size: 36px;
-  color: var(--primary-text-color);
-  text-align: center;
-  margin: 0%;
-  margin-bottom: 50px;
+.clients {
+  padding: 60px 0;
+
+  @media screen and(min-width: 1200px) {
+    & {
+      padding: 94px 0;
+    }
+  }
 }
+
 .regular-clients-list {
-  display: flex;
-  flex-basis: calc(100% / 6 - 30px);
-  flex-wrap: wrap;
-  margin-right: -30px;
+  @media screen and(min-width: 480px) {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 210px);
+  }
+
+  @media screen and(min-width: 768px) {
+    grid-template-columns: repeat(3, 226px);
+  }
+
+  @media screen and(min-width: 1200px) {
+    grid-template-columns: repeat(6, 170px);
+  }
 }
 
 .clients-list {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and(min-width: 480px) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.regular-clients-title {
+  font-size: 28px;
+  color: var(--primary-text-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 1.39;
 }
 
 .clients-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
+  display: inline-block;
   height: 92px;
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
   border-radius: 4px;
   fill: var(--clients-color);
   transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 100%;
 
   &:hover,
   &:focus {
@@ -36,3 +64,43 @@
     border-color: var(--accent-color);
   }
 }
+
+.client-icon {
+  fill: var(--clients-color);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .client__list-link:hover &,
+  .client__list-link:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+/* 
+.clients__list-icon {
+  fill: var(--decoration-color);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: fill var(--effect-duration) var(--timing-function);
+
+  .clients__list-link:hover &,
+  .client__list-link:focus & {
+    fill: var(--accent-color);
+  }
+
+  .regular-clients-list {
+    display: flex;
+    flex-basis: calc(100% / 6 - 30px);
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+
+  .clients-list {
+    margin-right: 30px;
+  }
+} */
