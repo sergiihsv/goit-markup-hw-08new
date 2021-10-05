@@ -43,7 +43,7 @@
     background-color: var(--accent-color);
     border: 2px solid var(--accent-color);
     display: block;
-    bottom: 6px;
+    bottom: -1px;
   }
 
   &:hover,
@@ -228,6 +228,12 @@
 @media screen and(max-width: 767px) {
   .menu {
     display: none;
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .header-container {
+    height: 79px;
   }
 }
 

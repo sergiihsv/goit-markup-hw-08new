@@ -37,13 +37,23 @@
 }
 
 .regular-clients-title {
+  font-family: Roboto;
   font-size: 28px;
-  color: var(--primary-text-color);
   text-align: center;
+  line-height: 1.18;
+  color: var(--primary-text-color);
   letter-spacing: 0.03em;
   font-weight: 700;
   margin-bottom: 30px;
-  line-height: 1.39;
+  /* line-height: 1.39; */
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-clients-title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .clients-icon {

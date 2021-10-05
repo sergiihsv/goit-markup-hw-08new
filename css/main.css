@@ -115,6 +115,13 @@ ul {
   padding: 40px;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+    max-height: 609px;
+  }
+}
+
 .close-btn {
   position: absolute;
   top: 8px;
@@ -323,7 +330,7 @@ ul {
   background-color: var(--accent-color);
   border: 2px solid var(--accent-color);
   display: block;
-  bottom: 6px;
+  bottom: -1px;
 }
 
 .menu__link:hover, .menu__link:focus {
@@ -510,6 +517,12 @@ ul {
 @media screen and (max-width: 767px) {
   .menu {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    height: 79px;
   }
 }
 
@@ -797,7 +810,7 @@ ul {
   padding: 118px 60px;
   max-width: 480px;
   height: 400px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/imghero.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/imghero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -846,20 +859,20 @@ ul {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/imghero@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/imghero@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/tablet/imghero.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/imghero.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/tablet/imghero@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/imghero@2x.jpg");
   }
 }
 
@@ -868,13 +881,13 @@ ul {
     max-width: 1600px;
     height: 600px;
     padding: 200px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/desktop/imghero.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/imghero.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/desktop/imghero@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/imghero@2x.jpg");
   }
 }
 
@@ -896,6 +909,12 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-title {
+    margin-bottom: 30px;
+  }
 }
 
 .section-item {
@@ -1018,14 +1037,15 @@ ul {
   }
 }
 
-/* .features__text {
+.features__text {
   font-family: "Roboto", sans-serif;
   color: var(--title-text-color);
   font-weight: 400;
-  font-size: 13px;
-  line-height: 1.66;
+  font-size: 14px;
+  line-height: 24px;
   letter-spacing: 0.03em;
-} */
+}
+
 /* .section__features {
   padding-bottom: 94px;
 }
@@ -1261,13 +1281,23 @@ ul {
 }
 
 .regular-clients-title {
+  font-family: Roboto;
   font-size: 28px;
-  color: var(--primary-text-color);
   text-align: center;
+  line-height: 1.18;
+  color: var(--primary-text-color);
   letter-spacing: 0.03em;
   font-weight: 700;
   margin-bottom: 30px;
-  line-height: 1.39;
+  /* line-height: 1.39; */
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-clients-title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .clients-icon {
@@ -1452,7 +1482,6 @@ ul {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
