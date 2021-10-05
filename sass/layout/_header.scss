@@ -127,7 +127,6 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--header-logo-color);
-  /*  margin-right: 93px; */
   animation-duration: 500ms;
   animation-iteration-count: 2;
 }
@@ -160,7 +159,20 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .contact-list {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .contact__email {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list {
     position: relative;
 
     &:not(:last-child) {
